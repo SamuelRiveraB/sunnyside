@@ -1,44 +1,58 @@
 import React from "react";
 import "./Home.css";
+import bannerImg from "../images/mobile/image-header.jpg";
+import right1 from "../images/mobile/image-transform.jpg";
+import left2 from "../images/mobile/image-stand-out.jpg";
+import left3 from "../images/mobile/image-graphic-design.jpg";
+import right3 from "../images/mobile/image-photography.jpg";
+import arrow from "../images/icon-arrow-down.svg";
 
 function Home() {
 
     return (
         <div>
             <div className="container">
-                <div className="left-side">
-                    <p className="pre-space">SO, YOU WANT TO TRAVEL TO</p>
-                    <h1 className="space">SPACE</h1>
-                    <p className="post-space">Let’s face it; if you want to go to space, you might as well genuinely go to 
-                        outer space and not hover kind of on the edge of it. Well sit back, and relax 
-                        because we’ll give you a truly out of this world experience!
-                    </p>
+                <div className="banner">
+                    <img className="bannerImg" src={bannerImg} alt="bannerImg"></img>
+                    <h1 className="creatives">WE ARE CREATIVES</h1>
+                    <img className="arrow" src={arrow} alt="arrow"></img>
                 </div>
-                <div className="right-side">
-                    <div className="circle">
-                        <h2 className="explore">EXPLORE</h2>
+                <div className="reverse-cont">
+                    <div className="left-side1">
+                        <h2 className="transformTitle">Transform your brand</h2>
+                        <p className="transformText">We are a full-service creative agency specializing in helping brands grow fast. 
+                            Engage your clients through compelling visuals that do most of the marketing for you.
+                        </p>
+                        <a className="transformLearn" href="/">LEARN MORE</a>
+                    </div>
+                    <div className="right-side1">
+                        <img className="right1" src={right1} alt="right1"></img>
                     </div>
                 </div>
-                We are creatives
-
-  Transform your brand
-
-  We are a full-service creative agency specializing in helping brands grow fast. 
-  Engage your clients through compelling visuals that do most of the marketing for you.
-
-  Learn more
-
-  Stand out to the right audience
-
-  Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we’ll build and extend your brand in digital places. 
-
-  Learn more
-
-  Graphic design
-  Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential clients’ attention.
-
-  Photography
-  Increase your credibility by getting the most stunning, high-quality photos that improve your business image.
+                <div className="second-cont">
+                    <div className="left-side2">
+                        <img className="left2" src={left2} alt="left2"></img>
+                    </div>
+                    <div className="right-side2">
+                        <h2 className="standTitle">Stand out to the right audience</h2>
+                        <p className="standText">Using a collaborative formula of designers, researchers, 
+                        photographers, videographers, and copywriters, we’ll build and extend your brand in digital places.
+                        </p>
+                        <a className="standLearn" href="/">LEARN MORE</a>
+                    </div>
+                    <div className="left-side3">
+                        <img className="left3" src={left3} alt="left3"></img>
+                        <h2 className="graphicTitle">Graphic Design</h2>
+                        <p className="graphicText">Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential clients’ attention.
+                        </p>
+                    </div>
+                    <div className="right-side3">
+                    <img className="right3" src={right3} alt="right3"></img>
+                        <h2 className="photoTitle">Photography</h2>
+                        <p className="photoText">Increase your credibility by getting the most stunning, high-quality photos that improve your business image.
+                        </p>
+                    </div>
+                </div>
 
   Client testimonials
 

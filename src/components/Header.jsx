@@ -27,7 +27,7 @@ function Header() {
                         <li><a href="/" className="menu">About</a></li>
                         <li><a href="/" className="menu">Services</a></li>
                         <li><a href="/" className="menu">Projects</a></li>
-                        <li><button>Contact</button></li>
+                        <li><button className="contactBtn">CONTACT</button></li>
                     </ul>
                 </div>
             </nav>

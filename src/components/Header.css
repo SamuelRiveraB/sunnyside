@@ -5,6 +5,7 @@
         top: 0;
         left: 0;
         width: 100vw;
+        height: 8vh;
         display: grid;
         grid-template-columns: 50% 50%;
         z-index: 1000;
@@ -24,12 +25,12 @@
     }
 
     .right-header {
-        background-color: rgb(112, 35, 35);
+        background-color: #FFF;
         position: fixed;
         top: 12%;
         left: 50%;
         transform: translate(-50%);
-        height: 50vmax;
+        height: 43vmax;
         width: 90vw;
     }
 
@@ -39,13 +40,13 @@
         right: 0;
         width: 0;
         height: 0;
-        border-bottom: 6vmax solid rgb(112, 35, 35);
+        border-bottom: 6vmax solid #FFF;
         border-left: 6vmax solid transparent;
       }
 
     .nav-btn {
         position: fixed;
-        top: -18%;
+        top: -9vh;
         right: 1%;
         width: 2.5vmax;
         height: 2vmax;
@@ -58,7 +59,7 @@
         display: block;
         list-style: none;
         font-size: 3vmax;
-        padding: 4vmax 0 0 0;
+        padding: 2vmax 0 0 0;
     }
 
     .menu {
@@ -71,16 +72,36 @@
     }
 
     .header-menus li {
-        margin: 0 0 5vmax 2vmax;
+        margin: 0 0 4vmax 2vmax;
         text-align: left;
     }
 
-    .menu:hover {
-        border-right: 3px solid rgb(128, 128, 128);
+    /*.menu:hover {
+        border-bottom: 3px solid rgb(128, 128, 128);
+        margin-bottom: -1px;
+    }*/
+
+    .contactBtn {
+        position: relative;
+        font-size: 2vmax;
+        color: #000;
+        background-color: hsl(51, 100%, 49%);
+        border: 0;
+        width: 17vmax;
+        height: 7vmax;
+        left: 50%;
+        transform: translate(-50%);
+        border-radius:50px;
+        cursor:pointer;
     }
 
-    .active:hover {
-        border-bottom: 0 !important;
-        border-right: 3px solid white;
+    .contactBtn:hover {
+        background-color:#65ccff;
     }
+    .contactBtn:active {
+        background-color: #3DBEFF;
+        position:relative;
+        top:1px;
+    }
+    
 }
