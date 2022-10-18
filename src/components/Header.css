@@ -1,0 +1,86 @@
+@media (min-width : 320px) {
+    .header {
+        background-color: #3DBEFF;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        z-index: 1000;
+    }
+
+    .left-header {
+        padding: 1vmax 0 0 3vmax;
+    }
+
+    .logo {
+        font-size: 2.5vmax;
+        color: #FFF;
+        height: 5vmax;
+        width: 5vmax;
+        margin: 1vmax 0;
+        cursor: pointer;
+    }
+
+    .right-header {
+        background-color: rgb(112, 35, 35);
+        position: fixed;
+        top: 12%;
+        left: 50%;
+        transform: translate(-50%);
+        height: 50vmax;
+        width: 90vw;
+    }
+
+    .triangle {
+        position: fixed;
+        top: -7%;
+        right: 0;
+        width: 0;
+        height: 0;
+        border-bottom: 6vmax solid rgb(112, 35, 35);
+        border-left: 6vmax solid transparent;
+      }
+
+    .nav-btn {
+        position: fixed;
+        top: -18%;
+        right: 1%;
+        width: 2.5vmax;
+        height: 2vmax;
+        display: inline-block;
+        cursor: pointer;
+    }
+
+    .header-menus {
+        height: 50vmax;
+        display: block;
+        list-style: none;
+        font-size: 3vmax;
+        padding: 4vmax 0 0 0;
+    }
+
+    .menu {
+        position: relative;
+        display: inline-block;
+        color: rgb(73, 73, 73);
+        text-decoration: none;
+        left: 50%;
+        transform: translate(-50%);
+    }
+
+    .header-menus li {
+        margin: 0 0 5vmax 2vmax;
+        text-align: left;
+    }
+
+    .menu:hover {
+        border-right: 3px solid rgb(128, 128, 128);
+    }
+
+    .active:hover {
+        border-bottom: 0 !important;
+        border-right: 3px solid white;
+    }
+}
