@@ -5,33 +5,37 @@
         top: 0;
         left: 0;
         width: 100vw;
-        height: 8vh;
+        height: 14vw;
         display: grid;
         grid-template-columns: 50% 50%;
         z-index: 1000;
     }
 
     .left-header {
-        padding: 1vmax 0 0 3vmax;
+        height: 100%;
+        padding: 0 0 0 5vw;
     }
 
     .logo {
-        font-size: 2.5vmax;
+        font-size: 5vw;
         color: #FFF;
-        height: 5vmax;
-        width: 5vmax;
-        margin: 1vmax 0;
+        height: 10vw;
+        width: 10vw;
+        margin: 1vw 0;
         cursor: pointer;
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
     }
 
     .right-header {
         background-color: #FFF;
         position: fixed;
-        top: 12%;
+        top: 20vw;
         left: 50%;
         transform: translate(-50%);
-        height: 43vmax;
-        width: 90vw;
+        height: 90vw;
+        width: 80vw;
     }
 
     .triangle {
@@ -40,26 +44,26 @@
         right: 0;
         width: 0;
         height: 0;
-        border-bottom: 6vmax solid #FFF;
-        border-left: 6vmax solid transparent;
+        border-bottom: 10vw solid #FFF;
+        border-left: 10vw solid transparent;
       }
 
     .nav-btn {
         position: fixed;
-        top: -9vh;
-        right: 1%;
-        width: 2.5vmax;
-        height: 2vmax;
+        top: -15vw;
+        right: 0;
+        width: 5vw;
+        height: 4vw;
         display: inline-block;
         cursor: pointer;
     }
 
     .header-menus {
-        height: 50vmax;
+        height: 50vw;
         display: block;
         list-style: none;
-        font-size: 3vmax;
-        padding: 2vmax 0 0 0;
+        font-size: 6vw;
+        padding: 4vw 0 0 0;
     }
 
     .menu {
@@ -72,7 +76,7 @@
     }
 
     .header-menus li {
-        margin: 0 0 4vmax 2vmax;
+        margin: 0 0 8vw 4vw;
         text-align: left;
     }
 
@@ -82,13 +86,14 @@
     }*/
 
     .contactBtn {
+        margin: 1vw 0 0 0;
         position: relative;
         font-size: 2vmax;
         color: #000;
         background-color: hsl(51, 100%, 49%);
         border: 0;
-        width: 17vmax;
-        height: 7vmax;
+        width: 38vw;
+        height: 14vw;
         left: 50%;
         transform: translate(-50%);
         border-radius:50px;
@@ -103,5 +108,10 @@
         position:relative;
         top:1px;
     }
-    
+}
+
+@media (min-width : 1200px) {
+    .right-header {
+        all: unset;
+    }
 }
