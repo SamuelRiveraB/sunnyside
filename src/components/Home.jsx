@@ -2,7 +2,7 @@ import React from "react";
 import "./Home.css";
 import bannerImg from "../images/mobile/image-header.jpg";
 import arrow from "../images/icon-arrow-down.svg";
-import right1 from "../images/mobile/image-transform.jpg";
+import left1 from "../images/mobile/image-transform.jpg";
 import left2 from "../images/mobile/image-stand-out.jpg";
 import left3 from "../images/mobile/image-graphic-design.jpg";
 import right3 from "../images/mobile/image-photography.jpg";
@@ -18,7 +18,46 @@ import ig from "../images/icon-instagram.svg";
 import tw from "../images/icon-twitter.svg";
 import pi from "../images/icon-pinterest.svg";
 
+import bannerImgDesk from "../images/desktop/image-header.jpg";
+import left1Desk from "../images/desktop/image-transform.jpg";
+import left2Desk from "../images/desktop/image-stand-out.jpg";
+import left3Desk from "../images/desktop/image-graphic-design.jpg";
+import right3Desk from "../images/desktop/image-photography.jpg";
+import gallery1Desk from "../images/desktop/image-gallery-milkbottles.jpg";
+import gallery2Desk from "../images/desktop/image-gallery-orange.jpg";
+import gallery3Desk from "../images/desktop/image-gallery-cone.jpg";
+import gallery4Desk from "../images/desktop/image-gallery-sugar-cubes.jpg";
+
 function Home() {
+    React.useEffect(() => {
+        responsiveImgs();
+        function responsiveImgs() {
+            if (window.innerWidth < 1200) {
+                console.log("Mobile");
+                document.querySelector(".banner-img").src = bannerImg;
+                document.querySelector(".left1").src = left1;
+                document.querySelector(".left2").src = left2;
+                document.querySelector(".left3").src = left3;
+                document.querySelector(".right3").src = right3;
+                document.querySelector(".gallery1").src = gallery1;
+                document.querySelector(".gallery2").src = gallery2;
+                document.querySelector(".gallery3").src = gallery3;
+                document.querySelector(".gallery4").src = gallery4;
+            } else {
+                document.querySelector(".banner-img").src = bannerImgDesk;
+                document.querySelector(".left1").src = left1Desk;
+                document.querySelector(".left2").src = left2Desk;
+                document.querySelector(".left3").src = left3Desk;
+                document.querySelector(".right3").src = right3Desk;
+                document.querySelector(".gallery1").src = gallery1Desk;
+                document.querySelector(".gallery2").src = gallery2Desk;
+                document.querySelector(".gallery3").src = gallery3Desk;
+                document.querySelector(".gallery4").src = gallery4Desk;
+            }
+        }
+        window.addEventListener('resize', responsiveImgs);
+    })
+
     return (
         <div>
             <div className="container">
@@ -29,7 +68,7 @@ function Home() {
                 </div>
                 <div className="first-cont">
                     <div className="left-side1">
-                        <img className="left1" src={right1} alt="right1"></img>
+                        <img className="left1" src={left1} alt="left1"></img>
                     </div>
                     <div className="right-side1">
                         <h2 className="transform-title">Transform your brand</h2>
@@ -106,6 +145,7 @@ function Home() {
                     <a href="/" className="link">About</a>
                     <a href="/" className="link">Services</a>
                     <a href="/" className="link">Projects</a>
+                    <br />
                     <img className="icon" src={fb} alt="fb-icon"></img>
                     <img className="icon" src={ig} alt="ig-icon"></img>
                     <img className="icon" src={tw} alt="tw-icon"></img>

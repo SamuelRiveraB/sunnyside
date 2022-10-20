@@ -1,6 +1,6 @@
 @media (min-width: 320px) {
     .container {
-        margin: 8vh 0 0 0;
+        margin: 17vw 0 0 0;
     }
     
     .banner {
@@ -28,7 +28,6 @@
     
     .arrow {
         width: 7vw;
-        color: #FFF;
         position: absolute;
         left: 50%;
         top: 65vw;
@@ -58,7 +57,6 @@
         width: 100%;
         padding: 8vw 0 0 0;
         background-color: #FFF;
-        /*transform: scaleY(-1);*/
     }
     
     .transform-title {
@@ -92,6 +90,19 @@
         width: 45vw;
         position: relative;
         text-decoration: none;
+    }
+
+    .transform-learn::after {
+        content: '';
+        height: 3vw;
+        width: 36vw;
+        position: relative;
+        top: -2vw;
+        left: 50%;
+        transform: translate(-50%);
+        background: rgba(255, 230, 0, 0.3);
+        border-radius: 2vw;
+        display: block;
     }
 
     .second-cont {
@@ -149,10 +160,22 @@
         position: relative;
         text-decoration: none;
     }
+
+    .stand-learn::after {
+        content: '';
+        height: 3vw;
+        width: 36vw;
+        position: relative;
+        top: -2vw;
+        left: 50%;
+        transform: translate(-50%);
+        background: rgba(255, 0, 0 ,0.2);
+        border-radius: 2vw;
+        display: block;
+    }
     
     .left-side3 {
         width: 100%;
-        background-color: rgb(18, 53, 167);
     }
     
     .left3 {
@@ -188,7 +211,6 @@
     
     .right-side3 {
         width: 100%;
-        background-color: rgb(150, 47, 47);
     }
     
     .right3 {
@@ -338,23 +360,215 @@
 }
 
 @media (min-width: 1200px) {
+    .container {
+        margin: 17vw 0 0 0;
+    }
+    
+    .banner {
+        height: 40vw;
+    }
+    
+    .banner-img {
+        position: relative;
+        top: -50%;
+        width: 100%;
+        height: 150%;
+    }
+    
+    .creatives {
+        font-family: "Fraunces";
+        letter-spacing: 1vw;
+        width: 95vw;
+        font-size:  4vw;
+        top: 16%;
+    }
+    
+    .arrow {
+        width: 3vw;
+        position: absolute;
+        top: 24vw;
+    }
+    
     .first-cont {
-        grid-auto-rows: 45vw;
+        grid-auto-rows: 40vw;
         grid-template-columns: 50% 50%;
+        transform: scaleX(-1);
+    }
+    
+    .left-side1 {
+        position: relative;
+        width: 100%;
+        transform: scaleX(-1);
+    }
+
+    .right-side1 {
+        width: 100%;
+        padding: 5vw 0 0 0;
+        transform: scaleX(-1);
+    }
+    
+    .transform-title {
+        font-size: 3vw;
+        width: 32vw;
+        text-align: left;
+    }
+    
+    .transform-text {
+        font-size: 1.25vw;
+        line-height: 3vw;
+        width: 32vw;
+        margin:  0 0 2.5vw 0;
+        text-align: left;
+    }
+    
+    .transform-learn {
+        font-size: 1.5vw;
+        font-weight: 700;
+        width: 45vw;
+        text-align: left;
+        position: relative;
+        right: 20%;
     }
 
     .second-cont {
-        grid-auto-rows: 50vw;
+        grid-auto-rows: 40vw;
         grid-template-columns: 50% 50%;
+    }
+    
+    .right-side2 {
+        padding: 5vw 0 0 0;
+    }
+    
+    .stand-title {
+        font-size: 3vw;
+        width: 32vw;
+        text-align: left;
+    }
+    
+    .stand-text {
+        font-size: 1.25vw;
+        line-height: 3vw;
+        width: 32vw;
+        margin:  0 0 2.5vw 0;
+        text-align: left;
+    }
+    
+    .stand-learn {
+        font-size: 1.5vw;
+        font-weight: 700;
+        width: 45vw;
+        text-align: left;
+        position: relative;
+        right: 20%;
+    }
+    
+    .graphic-title {
+        font-size: 2.5vw;
+        left: 25%;
+        width: 20vw;
+        margin-top: 160.5vw;
+        transform: translate(-50%);
+    }
+    
+    .graphic-text {
+        font-size: 1.3vw;
+        line-height: 2.5vw;
+        width: 30vw;
+        left: 25%;
+        margin-top: 165.5vw;
+        transform: translate(-50%);
+    }
+    
+    .photo-title {
+        font-size: 2.5vw;
+        left: 75%;
+        width: 20vw;
+        margin-top: 160.5vw;
+        transform: translate(-50%);
+    }
+    
+    .photo-text {
+        font-size: 1.3vw;
+        line-height: 2.5vw;
+        width: 30vw;
+        left: 75%;
+        margin-top: 165.5vw;
+        transform: translate(-50%);
+    }
+
+    .testimonials {
+        font-family: "Fraunces";
+        color: hsl(210, 4%, 67%);
+        font-size: 2vw;
+        letter-spacing: 1vw;
+        width: 90vw;
+        position: absolute;
+        left: 50%;
+        margin-top: 190vw;
+        top: 0;
+        transform: translate(-50%);
     }
 
     .third-cont {
         grid-auto-rows: 30vw;
         grid-template-columns: repeat(3, 1fr);
+        padding: 23vw 7vw;
+        height: 18vw;
+    }
+
+    .third-left, .third-center, .third-right {
+        width: 25vw;
+    }
+
+    .client1, .client2, .client3 {
+        width: 5vw;
+        height: 5vw;
+    }
+
+    .client1-text, .client2-text, .client3-text {
+        font-size: 1.2vw;
+        line-height: 2.5vw;
+        width: 24vw;
+    }
+
+    .client1-name, .client2-name, .client3-name {
+        font-size: 2vw;
+        font-weight: 900;
+        width: 15vw;
+        top: 15%;
+    }
+
+    .client1-role, .client2-role, .client3-role {
+        font-size: 1.4vw;
+        width: 15vw;
+        top: 12%;
     }
 
     .fourth-cont {
         grid-auto-rows: 30vw;
         grid-template-columns: 25% 25% 25% 25%;
+    }
+
+    .footer {
+        height: auto;
+        padding: 6vw 0 0 0;
+    }
+
+    .sunnyside-foot {
+        font-size: 4vw;
+        width: 100%;
+        margin: 0 0 5vw 0;
+    }
+
+    .link {
+        font-size: 1.7vw;
+        margin: 3vw;
+        left: 5%;
+    }
+
+    .icon {
+        width: 2vw;
+        margin: 10vw 1vw 6vw 1vw;
+        cursor: pointer;
     }
 }

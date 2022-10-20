@@ -14,6 +14,28 @@ function Header() {
         }
     }
 
+    React.useEffect(() => {
+        const navImg = document.getElementsByClassName("nav-btn")[0];
+        const right = document.getElementsByClassName("right-header")[0];
+        if (window.innerWidth < 1200) {
+            navImg.style.visibility = "visible";
+            right.style.visibility = "hidden";
+        } else {
+            right.style.visibility = "visible";
+            navImg.style.visibility = "hidden";
+        }
+        
+        function responsiveNav() {
+            if (window.innerWidth < 1200) {
+                navImg.style.visibility = "visible"; 
+            } else {
+                right.style.visibility = "visible";
+                navImg.style.visibility = "hidden";
+            }  
+        }
+        window.addEventListener('resize', responsiveNav);
+    })
+
     return (
         <>
             <nav className="header">
