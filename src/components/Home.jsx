@@ -33,7 +33,6 @@ function Home() {
         responsiveImgs();
         function responsiveImgs() {
             if (window.innerWidth < 1200) {
-                console.log("Mobile");
                 document.querySelector(".banner-img").src = bannerImg;
                 document.querySelector(".left1").src = left1;
                 document.querySelector(".left2").src = left2;
@@ -62,13 +61,13 @@ function Home() {
         <div>
             <div className="container">
                 <div className="banner">
-                    <img className="banner-img" src={bannerImg} alt="banner-img"></img>
+                    <img className="banner-img" src="" alt="banner-img"></img>
                     <h1 className="creatives">WE ARE CREATIVES</h1>
                     <img className="arrow" src={arrow} alt="arrow"></img>
                 </div>
                 <div className="first-cont">
                     <div className="left-side1">
-                        <img className="left1" src={left1} alt="left1"></img>
+                        <img className="left1" src="" alt="left1"></img>
                     </div>
                     <div className="right-side1">
                         <h2 className="transform-title">Transform your brand</h2>
@@ -80,7 +79,7 @@ function Home() {
                 </div>
                 <div className="second-cont">
                     <div className="left-side2">
-                        <img className="left2" src={left2} alt="left2"></img>
+                        <img className="left2" src="" alt="left2"></img>
                     </div>
                     <div className="right-side2">
                         <h2 className="stand-title">Stand out to the right audience</h2>
@@ -90,13 +89,13 @@ function Home() {
                         <a className="stand-learn" href="/">LEARN MORE</a>
                     </div>
                     <div className="left-side3">
-                        <img className="left3" src={left3} alt="left3"></img>
+                        <img className="left3" src="" alt="left3"></img>
                         <h2 className="graphic-title">Graphic Design</h2>
                         <p className="graphic-text">Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential clients’ attention.
                         </p>
                     </div>
                     <div className="right-side3">
-                    <img className="right3" src={right3} alt="right3"></img>
+                    <img className="right3" src="" alt="right3"></img>
                         <h2 className="photo-title">Photography</h2>
                         <p className="photo-text">Increase your credibility by getting the most stunning, high-quality photos that improve your business image.
                         </p>
@@ -128,16 +127,16 @@ function Home() {
                 </div>
                 <div className="fourth-cont">
                     <div className="fourth1">
-                        <img className="gallery1" src={gallery1} alt="gallery1"></img>
+                        <img className="gallery1" src="" alt="gallery1"></img>
                     </div>
                     <div className="fourth2">
-                        <img className="gallery2" src={gallery2} alt="gallery2"></img>
+                        <img className="gallery2" src="" alt="gallery2"></img>
                     </div>
                     <div className="fourth3">
-                        <img className="gallery3" src={gallery3} alt="gallery3"></img>
+                        <img className="gallery3" src="" alt="gallery3"></img>
                     </div>
                     <div className="fourth4">
-                        <img className="gallery4" src={gallery4} alt="gallery4"></img>
+                        <img className="gallery4" src="" alt="gallery4"></img>
                     </div>
                 </div>
                 <div className="footer">

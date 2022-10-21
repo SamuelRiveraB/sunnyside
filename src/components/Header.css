@@ -81,11 +81,6 @@
         text-align: left;
     }
 
-    /*.menu:hover {
-        border-bottom: 3px solid rgb(128, 128, 128);
-        margin-bottom: -1px;
-    }*/
-
     .contactBtn {
         margin: 1vw 0 0 0;
         position: relative;
@@ -98,11 +93,12 @@
         height: 14vw;
         left: 50%;
         transform: translate(-50%);
-        border-radius:50px;
-        cursor:pointer;
+        border-radius: 50px;
+        cursor: pointer;
     }
 
     .contactBtn:hover {
+        color: #FFF;
         background-color:#65ccff;
     }
     .contactBtn:active {
